@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <script>
+       var msg=prompt("请输入要输入的内容");
+       var mg=msg.search(/([我卧]|wo)\s*([草艹操槽]|cao)/i);
+       if(mg!=-1){
+           document.write(`<h1 style="color:green">包含敏感词禁止发送</h1>`)
+       } else{
+           document.write(`<h1 style="color:green">航妞说${msg}</h1>`)
+       }
+    </script>
+</body>
+</html>
